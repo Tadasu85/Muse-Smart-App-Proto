@@ -1,0 +1,19 @@
+{
+  "name": "muse-smart-app-proto",
+  "version": "0.0.1",
+  "description": "A prototype for firing ops on the muse blockchain, to contain linking metadata for urls and description.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tadasu85/Muse-Smart-App-Proto.git"
+  },
+  "author": "Raymon Johnstone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tadasu85/Muse-Smart-App-Proto/issues"
+  },
+  "homepage": "https://github.com/Tadasu85/Muse-Smart-App-Proto#readme"
+}
