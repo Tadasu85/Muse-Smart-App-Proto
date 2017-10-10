@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        
+        <style>
+            #result_zone strong {
+                color: white;
+                background-color: black;
+                padding: 2px;
+            }
+            body {
+                border-style: double;
+
+            }
+            #credits {
+                color: white;
+                background-color: green;
+                margin: 5px;
+            }
+            #NodeData {
+                margin: 20px;
+                background-color: green;
+            }
+        </style>
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <script src="./muse.min.js"></script>
+
+       
+	
+
+    </head>
+ 
+    <body>
+
+    <form action="/" method="post" id="rights_manager_form">
+            
+
+    <h1>Album info section:</h1>
+    <input type="text" name="Album Title" id="Album Title" placeholder="Album Title..." size="50" autofocus />
+    <input type="text" name="Album Artist" id="Album Artist" placeholder="Album Artist..." size="50" autofocus />
+    
+    “+” Button for more Artists
+    <input type="text" name="Album Genre 1" id="Album Genre 1" placeholder="Album Genre 1..." size="50" autofocus />
+    
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Click “+” button for Album genre 2
+    <input type="text" name="Country of Origin" id="Country of Origin" placeholder="Country of Origin..." size="50" autofocus />
+    
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Explicit Y/N/Clean
+    <input type="text" name="Album P line" id="Album P line" placeholder="Album P line..." size="50" autofocus />
+    
+    <input type="text" name="Album C line" id="Album C line" placeholder="Album C line..." size="50" autofocus />
+    
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    UPC or EAN
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Release Date
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Release Year
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Sales Start Date
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Album Producer
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Product Type
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Master Label Name
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Display Label Name (aka imprint label name)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    “+” Button for more Display Labels
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Metadata Language (Album)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Album Remixer
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Featured Artist (album level)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Label Catalog #
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Album Description
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Release Territory
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+
+    <h1>Track info section:</h1>
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Title
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    ISRC code
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Artist
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Artist aliases / different spelling
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    ISNI code (artist)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    “+” Button for more Artists
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Featured Artist
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    ISNI code (for the featured artist)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Producer
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Genre 1
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Genre 2
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track P line
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track #
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Volume #
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Copyright # (master recording)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Duration (autofill only)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Contains samples? Y/N
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Track Remixer
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Metadata Language (Track)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+
+    <h1>Composition Side</h1>
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Composition Title
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Alternate composition title
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    ISWC Code
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Third Party publishers? Y/N
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Publishers
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Click “+” button to enter extra publishers
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    IPI/CAE Number (publisher)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    ISNI (publisher)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Writer
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    “+” Button for more Writers
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    IPI/CAE Number (writer)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    ISNI code (composer, lyricist)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Writer’s role (music, lyrics, etc)
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Who is this writer’s publisher?
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+    Click “+” button to enter extra writers
+    <input type="text" name="message" id="message" placeholder="Something..." size="50" autofocus />
+
+        </form>
+
+        <section id="result_zone">
+            
+        </section>
+    
+        <script>
+
+            muse.config.set('websocket','wss://api.muse.blckchnd.com');
+
+        </script>
+    </body>
+</html>
