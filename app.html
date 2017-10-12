@@ -169,6 +169,20 @@
 
             muse.config.set('websocket','wss://api.muse.blckchnd.com');
 
+            var username = prompt('What\'s your username?');
+            
+            
+            var activekey = prompt('What\'s your active key?');
+
+            muse.api.getConfig(function(err, response){
+                console.log(err, response);
+            });
+
+            muse.api.getAccounts(["username"], function(err, response){
+                console.log(err, response);
+            });
+
+            muse.auth.isWif(activekey);
             
 
         </script>
