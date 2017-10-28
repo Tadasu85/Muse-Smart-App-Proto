@@ -29,6 +29,8 @@
 
         <script src="./muse.min.js"></script>
 
+        <script src="https://use.fontawesome.com/40f584de83.js"></script>
+
     </head>
  
     <body>
@@ -36,7 +38,7 @@
             <h1>Muse Meta Proto (Fire Track, Composition, Artist Data and store on the Muse Blockchain)</h1>
         </center>
 
-    <form action="/" method="post" id="rights_manager_form">
+    <form action="/" method="post" id="album_info_section">
             
 <h1>Album info section:</h1>
 
@@ -44,15 +46,20 @@
 
     <input type="text" name="Album Artist" id="Album Artist" placeholder="Album Artist..." size="50" autofocus />
     
-    <input type="button" name="“+” Button for more Artists" id="Click “+” button for Album genre 2" placeholder="“+” Button for more Artists..." size="50" autofocus />
+    <button name="More Artist Fields"  id="more_artist_fields" placeholder="“+” Button for more Artists..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
     <input type="text" name="Album Genre 1" id="Album Genre 1" placeholder="Album Genre 1..." size="50" autofocus />
     
-    <input type="button" name="Click “+” button for Album genre 2" id="Click “+” button for Album genre 2" placeholder="Click “+” button for Album genre 2..." size="50" autofocus />
+    <button name="More Genre Fields"  id="more_genre_fields" placeholder="“+” Button for more Genre..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
     <input type="text" name="Country of Origin" id="Country of Origin" placeholder="Country of Origin..." size="50" autofocus />
     
-    <input type="text" name="Explicit Y/N/Clean" id="Explicit Y/N/Clean" placeholder="Explicit Y/N/Clean..." size="50" autofocus />
+    <input list="YES/NO" name= "Explicit?" id= "explicit" placeholder= "Explicit?">
+    <datalist id = "YES/NO">
+        <option value = "YES">
+        <option value = "NO">
+    </datalist>
+    </input>
     
     <input type="text" name="Album P line" id="Album P line" placeholder="Album P line..." size="50" autofocus />
     
@@ -74,7 +81,7 @@
     
     <input type="text" name="Display Label Name (aka imprint label name)" id="Display Label Name (aka imprint label name)" placeholder="Display Label Name (aka imprint label name)..." size="50" autofocus />
     
-    <input type="button" name="“+” Button for more Display Labels" id="“+” Button for more Display Labels" placeholder="“+” Button for more Display Labels..." size="50" autofocus />
+    <button name="More Label Fields"  id="more_more_display_labels" placeholder="“+” Button for more Labels..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
     <input type="text" name="Metadata Language (Album)" id="Metadata Language (Album)" placeholder="Metadata Language (Album)..." size="50" autofocus />
     
@@ -88,6 +95,12 @@
     
     <input type="text" name="Release Territory" id="Release Territory" placeholder="Release Territory..." size="50" autofocus />
 
+    <input type="submit" id="submit_album_info_section" value="Submit Album Info Section" />
+
+</form>
+
+<form action="/" method="post" id="track_info_section">
+
     <h1>Track info section:</h1>
     <input type="text" name="Track Title" id="Track Title" placeholder="Track Title..." size="50" autofocus />
     
@@ -95,11 +108,11 @@
     
     <input type="text" name="Track Artist" id="Track Artist" placeholder="Track Artist..." size="50" autofocus />
     
-    <input type="text" name="Track Artist aliases / different spelling" id="Track Artist aliases / different spelling" placeholder="Track Artist aliases / different spelling..." size="50" autofocus />
+    <button name="More Artist Fields"  id="more_track_artist_fields" placeholder="“+” Button for more Artists..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
     <input type="text" name="ISNI code (artist)" id="ISNI code (artist)" placeholder="ISNI code (artist)..." size="50" autofocus />
     
-    <input type="button" name="“+” Button for more Artists" id="“+” Button for more Artists" placeholder="“+” Button for more Artists..." size="50" autofocus />
+    <button name="More Artist Fields"  id="more_artist_fields_2" placeholder="“+” Button for more Artists..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
     <input type="text" name="Featured Artist" id="Featured Artist" placeholder="Featured Artist..." size="50" autofocus />
     
@@ -121,13 +134,24 @@
     
     <input type="text" name="Track Duration (autofill only)" id="Track Duration (autofill only)" placeholder="Track Duration (autofill only)..." size="50" autofocus />
     
-    <input type="text" name="Contains samples? Y/N" id="Contains samples? Y/N" placeholder="Contains samples? Y/N..." size="50" autofocus />
+    <input list= "YES/NO" name="Contains samples?" id="contains_samples?" placeholder="Contains samples?">
+    <datalist id = "YES/NO">
+        <option value = "YES">
+        <option value = "NO">
+    </datalist>
+    </input>
     
     <input type="text" name="Track Remixer" id="Track Remixer" placeholder="Track Remixer..." size="50" autofocus />
     
     <input type="text" name="Metadata Language (Track)" id="Metadata Language (Track)" placeholder="Metadata Language (Track)..." size="50" autofocus />
+
+    <input type="submit" id="submit_track_info_section" value="Submit Track Info Section" />
+
+</form>
+
+<form action="/" method="post" id="composition_info_section">
     
-<h1>Composition Side</h1>
+<h1>Composition Info Section:</h1>
     <input type="text" name="Composition Title" id="Composition Title" placeholder="Composition Title..." size="50" autofocus />
     
     <input type="text" name="Alternate composition title" id="Alternate composition title" placeholder="Alternate composition title..." size="50" autofocus />
@@ -138,15 +162,15 @@
     
     <input type="text" name="Publishers" id="Publishers" placeholder="Publishers..." size="50" autofocus />
     
-    <input type="button" name="Click “+” button to enter extra publishers" id="Click “+” button to enter extra publishers" placeholder="Click “+” button to enter extra publishers..." size="50" autofocus />
-    
+    <button name="More Publishers Fields"  id="more_publisher_fields" placeholder="“+” Button for more Publishers..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
+
     <input type="text" name="IPI/CAE Number (publisher)" id="IPI/CAE Number (publisher)" placeholder="IPI/CAE Number (publisher)..." size="50" autofocus />
     
     <input type="text" name="ISNI (publisher)" id="ISNI (publisher)" placeholder="ISNI (publisher)..." size="50" autofocus />
     
     <input type="text" name="Writer" id="Writer" placeholder="Writer..." size="50" autofocus />
     
-    <input type="button" name="“+” Button for more Writers" id="“+” Button for more Writers" placeholder="“+” Button for more Writers..." size="50" autofocus />
+    <button name="More Writers Fields"  id="more_writers_fields" placeholder="“+” Button for more Writers..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
     <input type="text" name="IPI/CAE Number (writer)" id="IPI/CAE Number (writer)" placeholder="IPI/CAE Number (writer)..." size="50" autofocus />
     
@@ -156,7 +180,9 @@
     
     <input type="text" name="Who is this writer’s publisher?" id="Who is this writer’s publisher?" placeholder="Who is this writer’s publisher?..." size="50" autofocus />
     
-    <input type="button" name="Click “+” button to enter extra writers" id="Click “+” button to enter extra writers" placeholder="Click “+” button to enter extra writers..." size="50" autofocus />
+    <button name="More Writers Fields"  id="more_writers_fields_2" placeholder="“+” Button for more Writers..." size="50" autofocus> <i class="fa fa-plus" aria-hidden="true"></i></button>
+
+    <input type="submit" id="submit_composition_info_section" value="Submit Composition Info Section" />
     
     
         </form>
@@ -182,7 +208,32 @@
                 console.log(err, response);
             });
 
-            muse.auth.isWif(activekey);
+            muse.auth.isWif(activekey, function(err, response){
+                console.log(err, response);
+            });
+
+            muse.api.lookupStreamingPlatformAccounts("", 10, function(err, response){
+                console.log(err, response);
+            });
+
+            $('#album_info_section').submit(function () {
+
+                return false;
+
+            });
+
+            $('#track_info_section').submit(function () {
+
+                return false;
+
+            });
+
+            $('#composition_info_section').submit(function () {
+
+                return false;
+
+            });
+
             
 
         </script>
