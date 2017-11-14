@@ -202,9 +202,31 @@
 
             function fire(){
 
+
+                var json = JSON.stringify(
+  ['Check', {
+    
+    what: [] // Use an empty array "[]" to unfollow
+  }]
+);
+var i = 0;
+while(i < 50) {
+muse.broadcast.customJson(
+  activekey,
+  [username], // Required_auths
+  ["active"], // Required Posting Auths
+  Math.random() + 'test', // Id
+  json, //
+  function(err, result) {
+    console.log(err, result);
+  }
+);
+i++
+};
+
             
 
-                muse.broadcast.content(
+                /*muse.broadcast.content(
 
                 activekey,
             ///
@@ -265,7 +287,7 @@
     ///
     , function(err, result){console.log(err, result);
 
-  });
+  });*/
 
         };
 
