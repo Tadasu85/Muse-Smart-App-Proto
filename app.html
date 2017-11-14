@@ -56,13 +56,25 @@
     
     <input type="text" name="Country of Origin" id="country_of_origin" placeholder="Country of Origin"/>
     
-    <input list="YES/NO" name= "Explicit?" id= "explicit" placeholder= "Explicit?">
+    <input list="true/false" name= "Explicit?" id= "explicit" placeholder= "Explicit?">
 
-    <datalist id = "YES/NO">
+    <datalist id = "true/false">
 
-        <option value = 1>
+        <option value = true>
 
-        <option value = 0>
+        <option value = false>
+
+    </datalist>
+
+    </input>
+
+    <input list= "true/false" name="Is Content Part of an Album?" id="part_of_album" placeholder="Part Of Album?">
+
+    <datalist id = "true/false">
+
+        <option value = true >
+
+        <option value = false >
 
     </datalist>
 
@@ -79,44 +91,14 @@
     <input type="text" name="Release Year" id="release_year" placeholder="Release Year" />
     
     <input type="text" name="Sales Start Date" id="sales_start_date" placeholder="Sales Start Date" />
-    
-    <input type="text" name="Album Producer" id="album_producer" placeholder="Album Producer" />
-    
-    <input type="text" name="Product Type" id="product_type" placeholder="Product Type" />
-    
+      
     <input type="text" name="Master Label Name" id="master_label_name" placeholder="Master Label Name"  />
     
     <input type="text" name="Display Label Name" id="display_label_name" placeholder="Display Label Name (aka imprint label name)" />
     
     <button name="More Label Fields"  id="more_more_display_labels" placeholder="“+” Button for more Labels" size="50"> <i class="fa fa-plus" aria-hidden="true"></i></button>
     
-    <input type="text" name="Metadata Language (Album)" id="metadata_language" placeholder="Metadata Language (Album)" />
-    
-    <input type="text" name="Album Remixer" id="album_remixer" placeholder="Album Remixer" />
-    
-    <input type="text" name="Featured Artist (album level)" id="featured_artist" placeholder="Featured Artist" />
-    
-    <input type="text" name="Label Catalog #" id="label_catalog_#" placeholder="Label Catalog #" />
-    
-    <input type="text" name="Album Description" id="album_description" placeholder="Album Description"  />
-    
-    <input type="text" name="Release Territory" id="release_territory" placeholder="Release Territory"  />
-
     <h1>Track info section:</h1>
-
-    <input list= "YES/NO" name="Is Content Part of an Album?" id="part_of_album" placeholder="Part Of Album?">
-
-    <datalist id = "YES/NO">
-
-        <option value = 1 >
-
-        <option value = 0 >
-
-    </datalist>
-
-    </input>
-
-    <input type="text" name="Artist" id="artist" placeholder="Artist"/>
 
     <input type="text" name="Track Artists" id="track_artists" placeholder="Track Artists"/>
 
@@ -125,51 +107,34 @@
     <input type="text" name="ISRC code" id="isrc_code" placeholder="ISRC code"/>
        
     <button name="More Artist Fields" id="more_track_artist_fields"> <i class="fa fa-plus" aria-hidden="true"></i></button>
-    
-    <input type="text" name="ISNI code (artist)" id="isni_code_artist" placeholder="ISNI code (artist)"  />
-    
-    <button name="More Artist Fields" id="more_artist_fields_2"> <i class="fa fa-plus" aria-hidden="true"></i></button>
-    
-    <input type="text" name="Featured Artist" id="featured_artist" placeholder="Featured Artist"  />
-    
-    <input type="text" name="ISNI code (for the featured artist)" id="isni_code_featured_artist" placeholder="ISNI code (for the featured artist)"/>
-    
-    <input type="text" name="Track Producer" id="track_producer" placeholder="Track Producer"/>
-    
+         
     <input type="text" name="Track Genre 1" id="track_genre_one" placeholder="Track Genre"/>
-    
-    <input type="text" name="Track Genre 2" id="track_genre_two" placeholder="Track Genre"/>
-    
-    <input type="text" name="Track P line" id="track_p_line" placeholder="Track P line"/>
+      
+    <input type="text" name="Track P line" id="p_line" placeholder="Track P line"/>
     
     <input type="text" name="Track #" id="track_number" placeholder="Track #"/>
     
-    <input type="text" name="Track Volume #" id="Track Volume #" placeholder="Track Volume #" />
+    <input type="text" name="Track Volume #" id="track_volume" placeholder="Track Volume #" />
     
     <input type="text" name="Copyright # (master recording)" id="copyright_number_master_recording" placeholder="Copyright # (master recording)" />
       
-    <input list= "YES/NO" name="Contains samples?" id="contains_samples" placeholder="Contains samples?">
+    <input list= "true/false" name="Contains samples?" id="contains_samples" placeholder="Contains samples?">
 
-    <datalist id = "YES/NO">
+    <datalist id = "true/false">
 
-        <option value = 1>
+        <option value = true>
 
-        <option value = 0>
+        <option value = false>
 
     </datalist>
 
     </input>
     
-    <input type="text" name="Track Remixer" id="track_remixer" placeholder="Track Remixer" />
         
 <h1>Composition Info Section:</h1>
 
     <input type="text" name="Composition Title" id="composition_title" placeholder="Composition Title" />
-    
-    <input type="text" name="Alternate composition title" id="alternate_composition_title" placeholder="Alternate composition title"/>
-    
-    <input type="text" name="ISWC Code" id="iswc_code" placeholder="ISWC Code"/>
-    
+        
     <input list= "YES/NO" name="Third Party Publisher" id="third_party" placeholder="Third Party Publisher?">
 
     <datalist id = "YES/NO">
@@ -182,23 +147,13 @@
 
     </input>
     
-    <input type="text" name="Publishers" id="publishers" placeholder="Publishers"  />
+    <input type="text" name="Publishers" id="publishers" placeholder="Publishers" />
     
     <button name="More Publishers Fields"  id="more_publisher_fields"> <i class="fa fa-plus" aria-hidden="true"></i></button>
 
-    <input type="text" name="IPI/CAE Number (publisher)" id="ipi_cae_number_publisher" placeholder="IPI/CAE Number (publisher)"/>
-    
-    <input type="text" name="ISNI (publisher)" id="isni_publisher" placeholder="ISNI (publisher)" />
-    
     <input type="text" name="Writer" id="writer" placeholder="Writer"/>
     
     <button name="More Writers Fields"  id="more_writers_fields"> <i class="fa fa-plus" aria-hidden="true"></i></button>
-    
-    <input type="text" name="IPI/CAE Number (writer)" id="ipi/cae" placeholder="IPI/CAE Number (writer)"/>
-    
-    <input type="text" name="ISNI code (composer, lyricist)" id="isni_code_composer" placeholder="ISNI code (composer, lyricist)"  />
-    
-    <input type="text" name="Writer’s role (music, lyrics, etc)" id="writer_role" placeholder="Writer’s role (music, lyrics, etc)"  />
     
     <input type="text" name="Who is this writer’s publisher?" id="writer_publisher" placeholder="Who is this writer’s publisher?"  />
     
@@ -243,6 +198,8 @@
             //     console.log(err, response);
             // });
 
+///mocked test fire available here : https://muse-db.com/block/2648511
+
             function fire(){
 
             
@@ -250,45 +207,45 @@
                 muse.broadcast.content(
 
                 activekey,
-            
+            ///
                 username,
 
                 $('#url').val(),
-              {
-                  "part_of_album": Boolean($('#part_of_album').val()),
-                  "album_title": $('#album_title').val(),
-                  "album_artist": [$('#album_artist').val()],
-                  "genre_1": parseInt($('#album_genre_one').val()),
-                  "country_of_origin": $('#country_of_origin').val(),
-                  "explicit_": parseInt($('#explicit').val()),
-                  "p_line": $('#album_p_line').val(),
-                  "c_line": $('#album_c_line').val(),
-                  "upc_or_ean": $('#upc_or_ean').val(),
-                  "release_date": parseInt($('#release_date').val()),
-                  "release_year": parseInt($('#release_year').val()),
-                  "sales_start_date": parseInt($('#sales_start_date').val()),
-                  "master_label_name": $('#master_label_name').val(),
-                  "display_label_name": $('#display_label_name').val()
-                },
                 {
-                  "track_title": $('#track_title').val(),
-                  "ISRC": $('#isrc_code').val(),
-                  "track_artists": [$('#track_artists').val()],
-                  "artist": $('#artist').val(),
-                  "genre_1": $('#track_genre_one').val(),
-                  "p_line": $('#p_line').val(),
-                  "track_no": $('#track_no').val(),
-                  "track_volume": $('#track_volume').val(),
-                  "track_duration": 1625362368,
-                  "samples": $('#samples').val()
-                },
-                {
-                  "composition_title": $('#composition_title').val(),
-                  "third_party_publishers": $('#third_party').val(),
-                  "publishers": [$('#publishers').val()],
-                  "writers": [$('#writers').val()],
-                  "producer": $('#producer').val()
-                },
+          "part_of_album": false,///Boolean($('#part_of_album').val()),
+          "album_title": $('#album_title').val(),
+          "album_artist": [],
+          "genre_1": parseInt($('#album_genre_one').val()),
+          "country_of_origin": $('#country_of_origin').val(),
+          "explicit_": parseInt($('#explicit').val()),
+          "p_line": $('#album_p_line').val(),
+          "c_line": $('#album_c_line').val(),
+          "upc_or_ean": $('#upc_or_ean').val(),
+          "release_date": parseInt($('#release_date').val()),
+          "release_year": parseInt($('#release_year').val()),
+          "sales_start_date": parseInt($('#sales_start_date').val()),
+          "master_label_name": $('#master_label_name').val(),
+          "display_label_name": $('#display_label_name').val()
+        },
+        {
+          "track_title": $('#track_title').val(),
+          "ISRC": $('#isrc_code').val(),
+          "track_artists": [],
+          "genre_1": parseInt($('#track_genre_one').val()),
+          "p_line": $('#p_line').val(),
+          "track_no": parseInt($('#track_number').val()),
+          "track_volume": parseInt($('#track_volume').val()),
+          "track_duration": 1625362368,
+          "samples": false///Boolean($('#samples').val())
+        },
+        {
+          "composition_title": $('#composition_title').val(),
+          "third_party_publishers": false,///Boolean($('#third_party').val()),
+          "publishers": [],
+          "writers": [],
+          "PRO": ""
+        },
+              
                 [{
                     "payee": username,
                     "bp": 10000
@@ -299,19 +256,16 @@
                     "percentage": 100
                   }
                 ],
-                100,[],[],
-                100,
-                10,
-                5000
-            
-            , 
+        100,
+    [],
+    [],
+        100,
+        10,
+        5000
+    ///
+    , function(err, result){console.log(err, result);
 
-            function(err, result)
-
-            {
-                console.log(err, result);
-
-            });        
+  });
 
         };
 

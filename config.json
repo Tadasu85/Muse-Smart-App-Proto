@@ -1,0 +1,8 @@
+{
+    "backend-address": "wss://wallet.museblockchain.com/blockchain",
+    "chain-prefix": "MUSE",
+    "chain-id": "1459ad9469d36835dbfda0d84ea7700fb6a3ee767c86c4f75de22fa0c40f6c61",
+    "api-address": "https://wallet.museblockchain.com/ws/",
+    "prod-mode": true,
+    "recaptcha-site-key": "6Le-4iwUAAAAABcjqqDSYUpKvbCKBcBbJw3hnJGX"
+}

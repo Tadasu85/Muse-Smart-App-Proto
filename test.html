@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<script src="muse.min.js"></script>
+<script>
+
+function GoTest() {
+
+  muse.config.set('websocket','wss://api.muse.blckchnd.com');
+
+	
+	muse.broadcast.content(
+	"5Jr3eYPW11Rp2NCpktVwHc5y5xeCgcLSHDRuWfNqhru4siXSE9Q",
+	///
+	"gchampagne",
+     "ipfs://here.here",
+      {
+          "part_of_album": false,
+          "album_title": "First test song",
+          "album_artist": [],
+          "genre_1": 249764518,
+          "country_of_origin": "",
+          "explicit_": 249845838,
+          "p_line": "",
+          "c_line": "",
+          "upc_or_ean": 0,
+          "release_date": 241057792,
+          "release_year": 1,
+          "sales_start_date": 3411165504,
+          "master_label_name": "",
+          "display_label_name": ""
+        },
+        {
+          "track_title": "First test song",
+          "ISRC": "",
+          "track_artists": [],
+          "genre_1": 1625362368,
+          "p_line": "",
+          "track_no": 1625362385,
+          "track_volume": 32656,
+          "track_duration": 1625362368,
+          "samples": false
+        },
+        {
+          "composition_title": "",
+          "third_party_publishers": false,
+          "publishers": [],
+          "writers": [],
+          "PRO": ""
+        },
+        [
+        {
+            "payee": "gchampagne",
+            "bp": 10000
+          }
+        ],
+        [
+        {
+            "voter": "gchampagne",
+            "percentage": 100
+          }
+        ],
+		100,
+    [],
+    [],
+        100,
+        10,
+        5000
+	///
+	, function(err, result){console.log(err, result);
+
+  });
+	
+  }
+	
+	
+
+
+</script>
+</head>
+
+<body onload="javascript:GoTest();">
+The content of the document......
+</body>
+
+</html>
